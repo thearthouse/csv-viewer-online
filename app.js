@@ -14,6 +14,10 @@ input.onchange = function () {
       skipEmptyLines: true
     })
 
+    // reset container
+    handsontableContainer.innerHTML = ''
+    handsontableContainer.className = ''
+
     Handsontable(handsontableContainer, {
       data: data.data,
       rowHeaders: true,
